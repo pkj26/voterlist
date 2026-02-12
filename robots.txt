@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap link for search engines
+Sitemap: https://voterlistexcel.in/sitemap.xml
