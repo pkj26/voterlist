@@ -33,6 +33,10 @@ const usePageSEO = (view: ViewState, state: StateData | null) => {
       title = "Form 20 Result in Excel | Booth Wise Election Analysis Data";
       desc = "Download Form 20 Final Result Sheet in Excel format. Booth-wise votes for every candidate. Sortable and Filterable Excel Data.";
       keywords = "form 20 in excel, form 20 excel download, booth wise election result excel, vidhan sabha result excel data";
+    } else if (view === 'UPDATED_LIST_2026') {
+      title = "2026 Updated Voter List Download | All India State-wise Excel Data";
+      desc = "Download the 2026 updated voter list in Excel format for all states and assembly constituencies of India. Booth-wise, accurate data for election campaigns.";
+      keywords = "2026 updated voter list, India voter list excel, all state voter list, assembly constituency data, election data 2026, booth wise voter list download";
     }
 
     document.title = title;
@@ -381,6 +385,52 @@ const Form20View = ({ onBack }: { onBack: () => void }) => (
    </div>
 );
 
+const UpdatedList2026View = ({ onBack, onStateClick }: { onBack: () => void, onStateClick: (state: StateData) => void }) => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const filteredStates = useMemo(() => {
+    return INDIAN_STATES.filter(state => state.name.toLowerCase().includes(searchTerm.toLowerCase()));
+  }, [searchTerm]);
+
+  return (
+    <div className="max-w-7xl mx-auto px-4 pb-12 animate-fade-in">
+      <button onClick={onBack} className="flex items-center gap-2 text-slate-500 hover:text-orange-500 text-[9px] font-black uppercase tracking-widest mb-8 group transition-all">
+        <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" /> BACK TO HOME
+      </button>
+
+      <div className="text-center mb-10">
+        <Badge variant="orange" className="mb-4">All India Data 2026</Badge>
+        <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tight text-slate-900 mb-2">2026 Updated Voter List</h1>
+        <p className="text-slate-500 font-medium max-w-2xl mx-auto">Select a State or Union Territory to view all Assembly Constituencies and download the voter list in Excel format.</p>
+      </div>
+
+      <div className="relative w-full md:w-1/2 mx-auto mb-12">
+        <input
+          type="text"
+          placeholder="Search State Name..."
+          className="w-full pl-12 pr-4 py-4 rounded-xl border border-slate-200 shadow-sm focus:border-orange-500 focus:ring-4 focus:ring-orange-100 outline-none transition-all font-bold text-sm"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <Search className="w-5 h-5 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {filteredStates.map((state) => (
+          <div key={state.id} onClick={() => onStateClick(state)} className="bg-white hover:bg-slate-50 border border-slate-200 hover:border-orange-300 p-6 rounded-xl cursor-pointer transition-all group shadow-sm">
+            <div className="flex justify-between items-start mb-4">
+              <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center text-slate-400 font-black text-xl group-hover:bg-orange-500 group-hover:text-white transition-colors">{state.code}</div>
+              <Badge variant="slate">{state.totalSeats} Seats</Badge>
+            </div>
+            <h3 className="text-lg font-black uppercase text-slate-900 group-hover:text-orange-600 transition-colors">{state.name}</h3>
+            <p className="text-xs text-slate-500 font-medium mt-1">Browse Constituencies <ChevronRight className="w-3 h-3 inline" /></p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+
 const App = () => {
   const [view, setView] = useState<ViewState>('HOME');
   const [selectedState, setSelectedState] = useState<StateData | null>(null);
@@ -398,7 +448,9 @@ const App = () => {
   const renderContent = () => {
     switch (view) {
       case 'STATE_VIEW':
-        return selectedState ? <StateView state={selectedState} onBack={() => setView('HOME')} onBuy={(ac) => { setSelectedAc(ac); setIsPurchaseModalOpen(true); }} /> : null;
+        return selectedState ? <StateView state={selectedState} onBack={() => setView('UPDATED_LIST_2026')} onBuy={(ac) => { setSelectedAc(ac); setIsPurchaseModalOpen(true); }} /> : null;
+      case 'UPDATED_LIST_2026':
+        return <UpdatedList2026View onBack={() => setView('HOME')} onStateClick={handleStateClick} />;
       case 'FORM20':
         return <Form20View onBack={() => setView('HOME')} />;
       case 'DATA_CONVERSION':
@@ -441,10 +493,10 @@ const App = () => {
                   <h3 className="font-black text-slate-900 uppercase text-sm">PDF to Excel</h3>
                   <p className="text-[10px] text-slate-500 font-bold mt-1">Guide & Service</p>
                </div>
-               <div onClick={() => setView('CONTACT')} className="bg-blue-50 hover:bg-blue-100 p-6 rounded-2xl border border-blue-100 cursor-pointer transition-all group">
-                  <Printer className="w-8 h-8 text-blue-600 mb-3 group-hover:scale-110" />
-                  <h3 className="font-black text-slate-900 uppercase text-sm">Voter Slips</h3>
-                  <p className="text-[10px] text-slate-500 font-bold mt-1">Parchi Printing</p>
+               <div onClick={() => setView('UPDATED_LIST_2026')} className="bg-blue-50 hover:bg-blue-100 p-6 rounded-2xl border border-blue-100 cursor-pointer transition-all group">
+                  <Layers className="w-8 h-8 text-blue-600 mb-3 group-hover:scale-110" />
+                  <h3 className="font-black text-slate-900 uppercase text-sm">2026 Updated List</h3>
+                  <p className="text-[10px] text-slate-500 font-bold mt-1">All India Data</p>
                </div>
                <div onClick={() => window.open(`https://wa.me/${CONTACT_WHATSAPP}`, '_blank')} className="bg-orange-50 hover:bg-orange-100 p-6 rounded-2xl border border-orange-100 cursor-pointer transition-all group">
                   <Phone className="w-8 h-8 text-orange-600 mb-3 group-hover:scale-110" />
@@ -456,7 +508,7 @@ const App = () => {
             <div id="states-section" className="mb-20">
                <h2 className="text-2xl font-black uppercase tracking-tight text-center mb-8">Select Your State</h2>
                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                  {INDIAN_STATES.map((state) => (
+                  {INDIAN_STATES.slice(0, 8).map((state) => (
                      <div key={state.id} onClick={() => handleStateClick(state)} className="bg-white hover:bg-slate-50 border border-slate-200 hover:border-orange-300 p-6 rounded-xl cursor-pointer transition-all group shadow-sm">
                         <div className="flex justify-between items-start mb-4">
                            <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center text-slate-400 font-black text-xl group-hover:bg-orange-500 group-hover:text-white transition-colors">{state.code}</div>
@@ -467,6 +519,11 @@ const App = () => {
                      </div>
                   ))}
                </div>
+                <div className="text-center mt-8">
+                    <button onClick={() => setView('UPDATED_LIST_2026')} className="bg-slate-900 hover:bg-orange-500 text-white px-8 py-3 rounded-lg text-xs font-black uppercase tracking-widest transition-colors flex items-center gap-2 mx-auto">
+                        View All States <ArrowRight className="w-4 h-4" />
+                    </button>
+                </div>
             </div>
           </div>
         );
@@ -480,6 +537,7 @@ const App = () => {
           <div onClick={() => setView('HOME')}><PremiumLogo /></div>
           <div className="hidden md:flex items-center gap-8">
              <button onClick={() => setView('HOME')} className={`text-xs font-bold uppercase tracking-widest ${view === 'HOME' ? 'text-orange-500' : 'text-slate-600'}`}>Home</button>
+             <button onClick={() => setView('UPDATED_LIST_2026')} className={`text-xs font-bold uppercase tracking-widest ${view === 'UPDATED_LIST_2026' ? 'text-orange-500' : 'text-slate-600'}`}>2026 List</button>
              <button onClick={() => setView('FORM20')} className={`text-xs font-bold uppercase tracking-widest ${view === 'FORM20' ? 'text-orange-500' : 'text-slate-600'}`}>Form 20</button>
              <button onClick={() => setView('DATA_CONVERSION')} className={`text-xs font-bold uppercase tracking-widest ${view === 'DATA_CONVERSION' ? 'text-orange-500' : 'text-slate-600'}`}>Convert PDF</button>
              <button onClick={() => setView('CONTACT')} className="bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded-lg text-[10px] font-black uppercase tracking-widest transition-colors">Support</button>

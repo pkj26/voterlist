@@ -26,6 +26,122 @@ const PB_DATA = [
   { no: 111, name: "Rajpura" }, { no: 112, name: "Dera Bassi" }, { no: 113, name: "Ghanaur" }, { no: 114, name: "Sanour" }, { no: 115, name: "Patiala Urban" }, { no: 116, name: "Samana" }, { no: 117, name: "Shutrana (SC)" }
 ];
 
+// --- DATA SOURCE: HARYANA (90) ---
+const HR_DATA = [
+  { no: 1, name: "Kalka" }, { no: 2, name: "Panchkula" }, { no: 3, name: "Naraingarh" }, { no: 4, name: "Ambala Cantt." }, { no: 5, name: "Ambala City" }, { no: 6, name: "Mullana (SC)" }, { no: 7, name: "Sadhaura (SC)" }, { no: 8, name: "Jagadhri" }, { no: 9, name: "Yamunanagar" }, { no: 10, name: "Radaur" },
+  { no: 11, name: "Ladwa" }, { no: 12, name: "Shahbad (SC)" }, { no: 13, name: "Thanesar" }, { no: 14, name: "Pehowa" }, { no: 15, name: "Guhla (SC)" }, { no: 16, name: "Kalayat" }, { no: 17, name: "Kaithal" }, { no: 18, name: "Pundri" }, { no: 19, name: "Nilokheri (SC)" }, { no: 20, name: "Indri" },
+  { no: 21, name: "Karnal" }, { no: 22, name: "Gharaunda" }, { no: 23, name: "Assandh" }, { no: 24, name: "Panipat Rural" }, { no: 25, name: "Panipat City" }, { no: 26, name: "Israna (SC)" }, { no: 27, name: "Samalkha" }, { no: 28, name: "Ganaur" }, { no: 29, name: "Rai" }, { no: 30, name: "Kharkhauda (SC)" },
+  { no: 31, name: "Sonipat" }, { no: 32, name: "Gohana" }, { no: 33, name: "Baroda" }, { no: 34, name: "Julana" }, { no: 35, name: "Safidon" }, { no: 36, name: "Jind" }, { no: 37, name: "Uchana Kalan" }, { no: 38, name: "Narwana (SC)" }, { no: 39, name: "Tohana" }, { no: 40, name: "Fatehabad" },
+  { no: 41, name: "Ratia (SC)" }, { no: 42, name: "Kalanwali (SC)" }, { no: 43, name: "Dabwali" }, { no: 44, name: "Rania" }, { no: 45, name: "Sirsa" }, { no: 46, name: "Ellenabad" }, { no: 47, name: "Adampur" }, { no: 48, name: "Uklana (SC)" }, { no: 49, name: "Narnaund" }, { no: 50, name: "Hansi" },
+  { no: 51, name: "Barwala" }, { no: 52, name: "Hisar" }, { no: 53, name: "Nalwa" }, { no: 54, name: "Loharu" }, { no: 55, name: "Badhra" }, { no: 56, name: "Dadri" }, { no: 57, name: "Bhiwani" }, { no: 58, name: "Tosham" }, { no: 59, name: "Bawani Khera (SC)" }, { no: 60, name: "Meham" },
+  { no: 61, name: "Garhi Sampla-Kiloi" }, { no: 62, name: "Rohtak" }, { no: 63, name: "Kalanaur (SC)" }, { no: 64, name: "Bahadurgarh" }, { no: 65, name: "Badli" }, { no: 66, name: "Jhajjar (SC)" }, { no: 67, name: "Beri" }, { no: 68, name: "Ateli" }, { no: 69, name: "Mahendragarh" }, { no: 70, name: "Narnaul" },
+  { no: 71, name: "Nangal Chaudhry" }, { no: 72, name: "Bawal (SC)" }, { no: 73, name: "Kosli" }, { no: 74, name: "Rewari" }, { no: 75, name: "Pataudi (SC)" }, { no: 76, name: "Badshahpur" }, { no: 77, name: "Gurgaon" }, { no: 78, name: "Sohna" }, { no: 79, name: "Nuh" }, { no: 80, name: "Ferozepur Jhirka" },
+  { no: 81, name: "Punahana" }, { no: 82, name: "Hathin" }, { no: 83, name: "Hodal (SC)" }, { no: 84, name: "Palwal" }, { no: 85, name: "Prithla" }, { no: 86, name: "Faridabad NIT" }, { no: 87, name: "Badkhal" }, { no: 88, name: "Ballabhgarh" }, { no: 89, name: "Faridabad" }, { no: 90, name: "Tigaon" }
+];
+
+// --- DATA SOURCE: UTTARAKHAND (70) ---
+const UK_DATA = [
+    { no: 1, name: "Purola (SC)" }, { no: 2, name: "Yamunotri" }, { no: 3, name: "Gangotri" }, { no: 4, name: "Badrinath" }, { no: 5, name: "Tharali (SC)" }, { no: 6, name: "Karnprayag" }, { no: 7, name: "Kedarnath" }, { no: 8, name: "Rudraprayag" }, { no: 9, name: "Ghansali (SC)" }, { no: 10, name: "Devprayag" },
+    { no: 11, name: "Narendranagar" }, { no: 12, name: "Pratapnagar" }, { no: 13, name: "Tehri" }, { no: 14, name: "Dhanaulti" }, { no: 15, name: "Chakrata (ST)" }, { no: 16, name: "Vikasnagar" }, { no: 17, name: "Sahaspur" }, { no: 18, name: "Dharampur" }, { no: 19, name: "Raipur" }, { no: 20, name: "Rajpur Road (SC)" },
+    { no: 21, name: "Dehradun Cantt." }, { no: 22, name: "Mussoorie" }, { no: 23, name: "Doiwala" }, { no: 24, name: "Rishikesh" }, { no: 25, name: "Hardwar" }, { no: 26, name: "B.H.E.L. Ranipur" }, { no: 27, name: "Jwalapur (SC)" }, { no: 28, name: "Bhagwanpur (SC)" }, { no: 29, name: "Jhabrera (SC)" }, { no: 30, name: "Piran Kaliyar" },
+    { no: 31, name: "Roorkee" }, { no: 32, name: "Khanpur" }, { no: 33, name: "Manglaur" }, { no: 34, name: "Laksar" }, { no: 35, name: "Hardwar Rural" }, { no: 36, name: "Yamkeshwar" }, { no: 37, name: "Pauri (SC)" }, { no: 38, name: "Srinagar" }, { no: 39, name: "Chaubattakhal" }, { no: 40, name: "Lansdowne" },
+    { no: 41, name: "Kotdwar" }, { no: 42, name: "Dharchula" }, { no: 43, name: "Didihat" }, { no: 44, name: "Pithoragarh" }, { no: 45, name: "Gangolihat (SC)" }, { no: 46, name: "Kapkot" }, { no: 47, name: "Bageshwar (SC)" }, { no: 48, name: "Dwarahat" }, { no: 49, name: "Salt" }, { no: 50, name: "Ranikhet" },
+    { no: 51, name: "Someshwar (SC)" }, { no: 52, name: "Almora" }, { no: 53, name: "Jageshwar" }, { no: 54, name: "Lohaghat" }, { no: 55, name: "Champawat" }, { no: 56, name: "Lalkuan" }, { no: 57, name: "Bhimtal" }, { no: 58, name: "Nainital (SC)" }, { no: 59, name: "Haldwani" }, { no: 60, name: "Kaladhungi" },
+    { no: 61, name: "Ramnagar" }, { no: 62, name: "Jaspur" }, { no: 63, name: "Kashipur" }, { no: 64, name: "Bajpur (SC)" }, { no: 65, name: "Gadarpur" }, { no: 66, name: "Rudrapur" }, { no: 67, name: "Kichha" }, { no: 68, name: "Sitarganj" }, { no: 69, name: "Nanakmatta (ST)" }, { no: 70, name: "Khatima" }
+];
+
+// --- DATA SOURCE: TELANGANA (119) ---
+const TS_DATA = [
+  { no: 1, name: "Sirpur" }, { no: 2, name: "Asifabad (ST)" }, { no: 3, name: "Khanapur (ST)" }, { no: 4, name: "Adilabad" }, { no: 5, name: "Boath (ST)" }, { no: 6, name: "Nirmal" }, { no: 7, name: "Mudhole" }, { no: 8, name: "Chennur (SC)" }, { no: 9, name: "Bellampalli (SC)" }, { no: 10, name: "Mancherial" },
+  { no: 11, name: "Dharmapuri (SC)" }, { no: 12, name: "Ramagundam" }, { no: 13, name: "Manthani" }, { no: 14, name: "Peddapalle" }, { no: 15, name: "Karimnagar" }, { no: 16, name: "Choppadandi (SC)" }, { no: 17, name: "Vemulawada" }, { no: 18, name: "Sircilla" }, { no: 19, name: "Manakondur (SC)" }, { no: 20, name: "Huzurabad" },
+];
+
+// --- DATA SOURCE: ANDHRA PRADESH (175) ---
+const AP_DATA = [
+  { no: 1, name: "Palakonda (ST)" }, { no: 2, name: "Kurupam (ST)" }, { no: 3, name: "Parvathipuram (SC)" }, { no: 4, name: "Salur (ST)" }, { no: 5, name: "Araku Valley (ST)" }, { no: 6, name: "Paderu (ST)" }, { no: 7, name: "Rampachodavaram" }, { no: 8, name: "Ichchapuram" }, { no: 9, name: "Palasa" }, { no: 10, name: "Tekkali" },
+  { no: 11, name: "Pathapatnam" }, { no: 12, name: "Srikakulam" }, { no: 13, name: "Amadalavalasa" }, { no: 14, name: "Narasannapeta" }, { no: 15, name: "Etcherla" }, { no: 16, name: "Rajam (SC)" }, { no: 17, name: "Bobbili" }, { no: 18, name: "Cheepurupalle" }, { no: 19, name: "Gajapathinagaram" }, { no: 20, name: "Nellimarla" },
+  { no: 21, name: "Vizianagaram" }, { no: 22, name: "Srungavarapukota" }, { no: 23, name: "Bhimli" }, { no: 24, name: "Visakhapatnam East" }, { no: 25, name: "Visakhapatnam South" }, { no: 26, name: "Visakhapatnam North" }, { no: 27, name: "Visakhapatnam West" }, { no: 28, name: "Gajuwaka" }, { no: 29, name: "Chodavaram" }, { no: 30, name: "V.Madugula" },
+  { no: 31, name: "Anakapalli" }, { no: 32, name: "Pendurthi" }, { no: 33, "name": "Elamanchili" }, { no: 34, name: "Payakaraopeta (SC)" }, { no: 35, name: "Narsipatnam" }, { no: 36, name: "Tuni" }, { no: 37, name: "Prathipadu" }, { no: 38, name: "Pithapuram" }, { no: 39, name: "Kakinada Rural" }, { no: 40, name: "Peddapuram" },
+  { no: 41, name: "Kakinada City" }, { no: 42, name: "Jaggampeta" }, { no: 43, name: "Ramachandrapuram" }, { no: 44, name: "Mummidivaram" }, { no: 45, name: "Amalapuram (SC)" }, { no: 46, name: "Razole (SC)" }, { no: 47, name: "Gannavaram (SC)" }, { no: 48, name: "Kothapeta" }, { no: 49, name: "Mandapeta" }, { no: 50, name: "Anaparthy" },
+  { no: 51, name: "Rajanagaram" }, { no: 52, name: "Rajahmundry City" }, { no: 53, name: "Rajahmundry Rural" }, { no: 54, name: "Kovvur (SC)" }, { no: 55, name: "Nidadavole" }, { no: 56, name: "Gopalapuram (SC)" }, { no: 57, name: "Achanta" }, { no: 58, name: "Palacole" }, { no: 59, name: "Narasapuram" }, { no: 60, name: "Bhimavaram" },
+  { no: 61, name: "Undi" }, { no: 62, name: "Tanuku" }, { no: 63, name: "Tadepalligudem" }, { no: 64, name: "Unguturu" }, { no: 65, name: "Denduluru" }, { no: 66, name: "Eluru" }, { no: 67, name: "Polavaram (ST)" }, { no: 68, name: "Chintalapudi (SC)" }, { no: 69, name: "Nuzvid" }, { no: 70, name: "Kaikalur" },
+  { no: 71, name: "Gannavaram" }, { no: 72, name: "Gudivada" }, { no: 73, name: "Pedana" }, { no: 74, name: "Machilipatnam" }, { no: 75, name: "Avanigadda" }, { no: 76, name: "Pamarru (SC)" }, { no: 77, name: "Penamaluru" }, { no: 78, name: "Tiruvuru (SC)" }, { no: 79, name: "Vijayawada West" }, { no: 80, name: "Vijayawada Central" },
+  { no: 81, name: "Vijayawada East" }, { no: 82, name: "Mylavaram" }, { no: 83, name: "Nandigama (SC)" }, { no: 84, name: "Jaggayyapeta" }, { no: 85, name: "Tadikonda (SC)" }, { no: 86, name: "Mangalagiri" }, { no: 87, name: "Ponnur" }, { no: 88, name: "Tenali" }, { no: 89, name: "Prathipadu (SC)" }, { no: 90, name: "Guntur West" },
+  { no: 91, name: "Guntur East" }, { no: 92, name: "Pedakurapadu" }, { no: 93, name: "Chilakaluripet" }, { no: 94, name: "Narasaraopet" }, { no: 95, name: "Sattenapalli" }, { no: 96, name: "Vinukonda" }, { no: 97, name: "Gurazala" }, { no: 98, name: "Macherla" }, { no: 99, name: "Vemuru (SC)" }, { no: 100, name: "Repalle" },
+  { no: 101, name: "Bapatla" }, { no: 102, name: "Parchur" }, { no: 103, name: "Addanki" }, { no: 104, name: "Chirala" }, { no: 105, name: "Santhanuthalapadu (SC)" }, { no: 106, name: "Yerragondapalem (SC)" }, { no: 107, name: "Darsi" }, { no: 108, name: "Ongole" }, { no: 109, name: "Kondapi (SC)" }, { no: 110, name: "Markapuram" },
+  { no: 111, name: "Giddalur" }, { no: 112, name: "Kanigiri" }, { no: 113, name: "Allagadda" }, { no: 114, name: "Srisailam" }, { no: 115, name: "Nandikotkur (SC)" }, { no: 116, name: "Panyam" }, { no: 117, name: "Nandyal" }, { no: 118, name: "Banaganapalle" }, { no: 119, name: "Dhone" }, { no: 120, name: "Kurnool" },
+  { no: 121, name: "Pattikonda" }, { no: 122, name: "Kodumur (SC)" }, { no: 123, name: "Yemmiganur" }, { no: 124, name: "Mantralayam" }, { no: 125, name: "Adoni" }, { no: 126, name: "Alur" }, { no: 127, name: "Rayadurg" }, { no: 128, name: "Uravakonda" }, { no: 129, name: "Guntakal" }, { no: 130, name: "Tadipatri" },
+  { no: 131, name: "Singanamala (SC)" }, { no: 132, name: "Anantapur Urban" }, { no: 133, "name": "Kalyandurg" }, { no: 134, name: "Raptadu" }, { no: 135, name: "Madakasira (SC)" }, { no: 136, name: "Hindupur" }, { no: 137, name: "Penukonda" }, { no: 138, name: "Puttaparthi" }, { no: 139, name: "Dharmavaram" }, { no: 140, name: "Kadiri" },
+  { no: 141, name: "Badvel (SC)" }, { no: 142, name: "Kadapa" }, { no: 143, name: "Pulivendla" }, { no: 144, name: "Kamalapuram" }, { no: 145, name: "Jammalamadugu" }, { no: 146, name: "Proddatur" }, { no: 147, name: "Mydukur" }, { no: 148, name: "Kandukur" }, { no: 149, name: "Kavali" }, { no: 150, name: "Atmakur" },
+  { no: 151, name: "Kovur" }, { no: 152, name: "Nellore City" }, { no: 153, name: "Nellore Rural" }, { no: 154, name: "Udayagiri" }, { no: 155, name: "Sarvepalli" }, { no: 156, name: "Gudur (SC)" }, { no: 157, name: "Sullurpeta (SC)" }, { no: 158, name: "Venkatagiri" }, { no: 159, name: "Tirupati" }, { no: 160, name: "Srikalahasti" },
+  { no: 161, name: "Satyavedu (SC)" }, { no: 162, name: "Rajampet" }, { no: 163, name: "Kodur (SC)" }, { no: 164, name: "Rayachoti" }, { no: 165, name: "Thamballapalle" }, { no: 166, name: "Pileru" }, { no: 167, name: "Madanapalle" }, { no: 168, name: "Punganur" }, { no: 169, name: "Chandragiri" }, { no: 170, name: "Nagari" },
+  { no: 171, name: "Gangadhara Nellore (SC)" }, { no: 172, name: "Chittoor" }, { no: 173, name: "Puthalapattu (SC)" }, { no: 174, name: "Palamaner" }, { no: 175, name: "Kuppam" }
+];
+
+// --- DATA SOURCE: ARUNACHAL PRADESH (60) ---
+const AR_DATA = [
+  { no: 1, name: "Lumla (ST)" }, { no: 2, name: "Tawang (ST)" }, { no: 3, name: "Mukto (ST)" }, { no: 4, name: "Dirang (ST)" }, { no: 5, name: "Kalaktang (ST)" }, { no: 6, name: "Thrizino-Buragaon (ST)" }, { no: 7, name: "Bomdila (ST)" }, { no: 8, name: "Bameng (ST)" }, { no: 9, name: "Chayang Tajo (ST)" }, { no: 10, name: "Seppa East (ST)" },
+  { no: 11, name: "Seppa West (ST)" }, { no: 12, name: "Pakke Kessang (ST)" }, { no: 13, name: "Itanagar (ST)" }, { no: 14, name: "Doimukh (ST)" }, { no: 15, name: "Sagalee (ST)" }, { no: 16, name: "Yachuli (ST)" }, { no: 17, name: "Ziro Hapoli (ST)" }, { no: 18, name: "Palin (ST)" }, { no: 19, name: "Nyapin (ST)" }, { no: 20, name: "Tali (ST)" },
+  { no: 21, name: "Koloriang (ST)" }, { no: 22, name: "Nacho (ST)" }, { no: 23, name: "Taliha (ST)" }, { no: 24, name: "Daporijo (ST)" }, { no: 25, name: "Raga (ST)" }, { no: 26, name: "Dumporijo (ST)" }, { no: 27, name: "Liromoba (ST)" }, { no: 28, name: "Likabali (ST)" }, { no: 29, name: "Basar (ST)" }, { no: 30, name: "Along West (ST)" },
+  { no: 31, name: "Along East (ST)" }, { no: 32, name: "Rumgong (ST)" }, { no: 33, name: "Mechuka (ST)" }, { no: 34, name: "Tuting Yingkiong (ST)" }, { no: 35, name: "Pangin (ST)" }, { no: 36, name: "Nari-Koyu (ST)" }, { no: 37, name: "Pasighat West (ST)" }, { no: 38, "name": "Pasighat East (ST)" }, { no: 39, name: "Mebo (ST)" }, { no: 40, name: "Mariyang-Geku (ST)" },
+  { no: 41, name: "Anini (ST)" }, { no: 42, name: "Dambuk (ST)" }, { no: 43, name: "Roing (ST)" }, { no: 44, name: "Tezu (ST)" }, { no: 45, name: "Hayuliang (ST)" }, { no: 46, name: "Chowkham (ST)" }, { no: 47, name: "Namsai (ST)" }, { no: 48, name: "Lekang (ST)" }, { no: 49, name: "Bordumsa – Diyun" }, { no: 50, name: "Miao (ST)" },
+  { no: 51, name: "Nampong (ST)" }, { no: 52, name: "Changlang South (ST)" }, { no: 53, name: "Changlang North (ST)" }, { no: 54, name: "Namsang (ST)" }, { no: 55, name: "Khonsa East (ST)" }, { no: 56, name: "Khonsa West (ST)" }, { no: 57, name: "Borduria Bogapani (ST)" }, { no: 58, name: "Kanubari (ST)" }, { no: 59, name: "Longding Pumao (ST)" }, { no: 60, name: "Pongchau Wakka (ST)" }
+];
+
+// --- DATA SOURCE: ASSAM (126) ---
+const AS_DATA = [
+  { no: 1, name: "Ratabari (SC)" }, { no: 2, name: "Patharkandi" }, { no: 3, name: "Karimganj North" }, { no: 4, name: "Karimganj South" }, { no: 5, name: "Badarpur" }, { no: 6, name: "Hailakandi" }, { no: 7, name: "Katlichera" }, { no: 8, name: "Algapur" }, { no: 9, name: "Silchar" }, { no: 10, name: "Sonai" },
+  { no: 11, name: "Dholai (SC)" }, { no: 12, name: "Udharbond" }, { no: 13, name: "Lakhipur" }, { no: 14, name: "Barkhola" }, { no: 15, name: "Katigorah" }, { no: 16, name: "Haflong (ST)" }, { no: 17, name: "Bokajan (ST)" }, { no: 18, name: "Howraghat (ST)" }, { no: 19, name: "Diphu (ST)" }, { no: 20, name: "Baithalangso (ST)" },
+  { no: 21, name: "Mankachar" }, { no: 22, name: "Salmara South" }, { no: 23, name: "Dhubri" }, { no: 24, name: "Gauripur" }, { no: 25, name: "Golakganj" }, { no: 26, name: "Bilasipara West" }, { no: 27, name: "Bilasipara East" }, { no: 28, name: "Goalpara East" }, { no: 29, name: "Goalpara West" }, { no: 30, name: "Jaleswar" },
+  { no: 31, name: "Gossaigaon" }, { no: 32, name: "Kokrajhar West (ST)" }, { no: 33, name: "Kokrajhar East (ST)" }, { no: 34, name: "Sidli (ST)" }, { no: 35, name: "Bijni" }, { no: 36, name: "Sorbhog" }, { no: 37, name: "Bhabanipur" }, { no: 38, name: "Tamulpur" }, { no: 39, name: "Barama (ST)" }, { no: 40, name: "Chapaguri (ST)" },
+  { no: 41, name: "Bongaigaon" }, { no: 42, name: "Abhayapuri North" }, { no: 43, name: "Abhayapuri South (SC)" }, { no: 44, name: "Patacharkuchi" }, { no: 45, name: "Barpeta" }, { no: 46, name: "Jania" }, { no: 47, name: "Baghbar" }, { no: 48, name: "Sarukhetri" }, { no: 49, name: "Chenga" }, { no: 50, name: "Dharmapur" },
+  { no: 51, name: "Dudhnai (ST)" }, { no: 52, name: "Boko (SC)" }, { no: 53, name: "Chaygaon" }, { no: 54, name: "Palasbari" }, { no: 55, name: "Jalukbari" }, { no: 56, name: "Dispur" }, { no: 57, name: "Gauhati East" }, { no: 58, name: "Gauhati West" }, { no: 59, name: "Hajo" }, { no: 60, name: "Barkhetry" },
+  { no: 61, name: "Kamalpur" }, { no: 62, name: "Rangiya" }, { no: 63, name: "Nalbari" }, { no: 64, name: "Panery" }, { no: 65, name: "Kalaigaon" }, { no: 66, name: "Sipajhar" }, { no: 67, name: "Mangaldoi (SC)" }, { no: 68, name: "Dalgaon" }, { no: 69, name: "Udalguri (ST)" }, { no: 70, name: "Majbat" },
+  { no: 71, name: "Dhekiajuli" }, { no: 72, name: "Barchalla" }, { no: 73, name: "Tezpur" }, { no: 74, name: "Rangapara" }, { no: 75, name: "Sootea" }, { no: 76, name: "Biswanath" }, { no: 77, name: "Behali" }, { no: 78, name: "Gohpur" }, { no: 79, name: "Bihpuria" }, { no: 80, name: "Jagiroad (SC)" },
+  { no: 81, name: "Marigaon" }, { no: 82, name: "Laharighat" }, { no: 83, name: "Raha (SC)" }, { no: 84, name: "Nowgong" }, { no: 85, name: "Barhampur" }, { no: 86, name: "Jamunamukh" }, { no: 87, name: "Hojai" }, { no: 88, name: "Lumding" }, { no: 89, name: "Dhing" }, { no: 90, name: "Batadroba" },
+  { no: 91, name: "Rupohihat" }, { no: 92, name: "Samaguri" }, { no: 93, name: "Kaliabor" }, { no: 94, name: "Bokakhat" }, { no: 95, name: "Sarupathar" }, { no: 96, name: "Golaghat" }, { no: 97, name: "Khumtai" }, { no: 98, name: "Dergaon (SC)" }, { no: 99, name: "Jorhat" }, { no: 100, name: "Titabar" },
+  { no: 101, name: "Mariani" }, { no: 102, name: "Teok" }, { no: 103, name: "Amguri" }, { no: 104, name: "Nazira" }, { no: 105, name: "Mahmara" }, { no: 106, name: "Sonari" }, { no: 107, name: "Thowra" }, { no: 108, name: "Sibsagar" }, { no: 109, name: "Moran" }, { no: 110, name: "Dibrugarh" },
+  { no: 111, name: "Lahowal" }, { no: 112, name: "Duliajan" }, { no: 113, name: "Tingkhong" }, { no: 114, name: "Naharkatia" }, { no: 115, name: "Tinsukia" }, { no: 116, name: "Digboi" }, { no: 117, name: "Margherita" }, { no: 118, name: "Majuli (ST)" }, { no: 119, name: "Naoboicha" }, { no: 120, name: "Lakhimpur" },
+  { no: 121, name: "Dhakuakhana (ST)" }, { no: 122, name: "Dhemaji (ST)" }, { no: 123, name: "Jonai (ST)" }, { no: 124, name: "Chabua" }, { no: 125, name: "Doom Dooma" }, { no: 126, name: "Sadiya" }
+];
+
+// --- DATA SOURCE: BIHAR (243) ---
+const BR_DATA = [
+  { no: 1, name: "Valmiki Nagar" }, { no: 2, name: "Ramnagar (SC)" }, { no: 3, name: "Narkatiaganj" }, { no: 4, name: "Bagaha" }, { no: 5, name: "Lauriya" }, { no: 6, name: "Sikta" }, { no: 7, name: "Nautan" }, { no: 8, name: "Chanpatia" }, { no: 9, name: "Bettiah" }, { no: 10, name: "Raxaul" },
+  { no: 11, name: "Sugauli" }, { no: 12, name: "Narkatia" }, { no: 13, name: "Harsidhi (SC)" }, { no: 14, name: "Govindganj" }, { no: 15, name: "Kesaria" }, { no: 16, name: "Kalyanpur" }, { no: 17, name: "Pipra" }, { no: 18, name: "Motihari" }, { no: 19, name: "Madhuban" }, { no: 20, name: "Chiraia" },
+  { no: 21, name: "Dhaka" }, { no: 22, name: "Sheohar" }, { no: 23, name: "Riga" }, { no: 24, name: "Belsand" }, { no: 25, name: "Bathnaha (SC)" }, { no: 26, name: "Parihar" }, { no: 27, name: "Sursand" }, { no: 28, name: "Bajpatti" }, { no: 29, name: "Sitamarhi" }, { no: 30, name: "Runnisaidpur" },
+  { no: 31, name: "Harlakhi" }, { no: 32, name: "Benipatti" }, { no: 33, name: "Bisfi" }, { no: 34, name: "Madhubani" }, { no: 35, name: "Keoti" }, { no: 36, name: "Jale" }, { no: 37, name: "Khajauli" }, { no: 38, name: "Babubarhi" }, { no: 39, name: "Rajnagar (SC)" }, { no: 40, name: "Jhanjharpur" },
+  { no: 41, name: "Phulparas" }, { no: 42, name: "Laukaha" }, { no: 43, name: "Nirmali" }, { no: 44, name: "Pipra" }, { no: 45, name: "Supaul" }, { no: 46, name: "Triveniganj (SC)" }, { no: 47, name: "Chhatapur" }, { no: 48, name: "Singheshwar (SC)" }, { no: 49, name: "Narpatganj" }, { no: 50, name: "Raniganj (SC)" },
+  { no: 51, name: "Forbesganj" }, { no: 52, name: "Araria" }, { no: 53, name: "Jokihat" }, { no: 54, name: "Sikti" }, { no: 55, name: "Bahadurganj" }, { no: 56, name: "Thakurganj" }, { no: 57, name: "Kishanganj" }, { no: 58, name: "Kochadhaman" }, { no: 59, name: "Amour" }, { no: 60, name: "Baisi" },
+  { no: 61, name: "Katihar" }, { no: 62, name: "Kadwa" }, { no: 63, name: "Balrampur" }, { no: 64, name: "Pranpur" }, { no: 65, name: "Manihari (ST)" }, { no: 66, name: "Barari" }, { no: 67, name: "Kasba" }, { no: 68, name: "Banmankhi (SC)" }, { no: 69, name: "Rupauli" }, { no: 70, name: "Dhamdaha" },
+  { no: 71, name: "Purnia" }, { no: 72, name: "Korha (SC)" }, { no: 73, name: "Alamnagar" }, { no: 74, name: "Bihariganj" }, { no: 75, name: "Madhepura" }, { no: 76, name: "Sonbarsha (SC)" }, { no: 77, name: "Saharsa" }, { no: 78, name: "Mahishi" }, { no: 79, name: "Gaura Bauram" }, { no: 80, name: "Benipur" },
+  { no: 81, name: "Alinagar" }, { no: 82, name: "Darbhanga Rural" }, { no: 83, name: "Darbhanga" }, { no: 84, name: "Bahadurpur" }, { no: 85, name: "Gaighat" }, { no: 86, name: "Aurai" }, { no: 87, name: "Bochaha (SC)" }, { no: 88, name: "Sakra (SC)" }, { no: 89, name: "Kurhani" }, { no: 90, name: "Muzaffarpur" },
+  { no: 91, name: "Minapur" }, { no: 92, name: "Kanti" }, { no: 93, name: "Baruraj" }, { no: 94, name: "Paroo" }, { no: 95, name: "Sahebganj" }, { no: 96, name: "Vaishali" }, { no: 97, name: "Baikunthpur" }, { no: 98, name: "Barauli" }, { no: 99, name: "Gopalganj" }, { no: 100, name: "Kuchaikote" },
+  { no: 101, name: "Bhorey (SC)" }, { no: 102, name: "Hathua" }, { no: 103, name: "Siwan" }, { no: 104, name: "Ziradei" }, { no: 105, name: "Darauli (SC)" }, { no: 106, name: "Raghunathpur" }, { no: 107, name: "Daraundha" }, { no: 108, name: "Barharia" }, { no: 109, name: "Goriakothi" }, { no: 110, name: "Maharajganj" },
+  { no: 111, name: "Ekma" }, { no: 112, name: "Manjhi" }, { no: 113, name: "Baniapur" }, { no: 114, name: "Taraiya" }, { no: 115, name: "Marhaura" }, { no: 116, name: "Chapra" }, { no: 117, name: "Garkha (SC)" }, { no: 118, name: "Amnour" }, { no: 119, name: "Parsa" }, { no: 120, name: "Sonepur" },
+  { no: 121, name: "Hajipur" }, { no: 122, name: "Lalganj" }, { no: 123, name: "Mahua" }, { no: 124, name: "Raja Pakar (SC)" }, { no: 125, name: "Raghopur" }, { no: 126, name: "Mahnar" }, { no: 127, name: "Patepur (SC)" }, { no: 128, name: "Ujiarpur" }, { no: 129, name: "Morwa" }, { no: 130, name: "Sarairanjan" },
+  { no: 131, name: "Mohiuddinnagar" }, { no: 132, name: "Bibhutipur" }, { no: 133, name: "Kusheshwar Asthan (SC)" }, { no: 134, name: "Hayaghat" }, { no: 135, name: "Kalyanpur (SC)" }, { no: 136, name: "Warisnagar" }, { no: 137, name: "Samastipur" }, { no: 138, name: "Rosera (SC)" }, { no: 139, name: "Cheria Bariarpur" }, { no: 140, name: "Bachhwara" },
+  { no: 141, name: "Teghra" }, { no: 142, name: "Matihani" }, { no: 143, name: "Sahebpur Kamal" }, { no: 144, name: "Begusarai" }, { no: 145, name: "Bakhri (SC)" }, { no: 146, name: "Simri Bakhtiarpur" }, { no: 147, name: "Hasanpur" }, { no: 148, name: "Alauli (SC)" }, { no: 149, name: "Khagaria" }, { no: 150, name: "Beldaur" },
+  { no: 151, name: "Parbatta" }, { no: 152, name: "Bihpur" }, { no: 153, name: "Gopalpur" }, { no: 154, name: "Pirpainti (SC)" }, { no: 155, name: "Kahalgaon" }, { no: 156, name: "Bhagalpur" }, { no: 157, name: "Nathnagar" }, { no: 158, name: "Sultanganj" }, { no: 159, name: "Amarpur" }, { no: 160, name: "Dhauraiya (SC)" },
+  { no: 161, name: "Banka" }, { no: 162, name: "Katoria (ST)" }, { no: 163, name: "Belhar" }, { no: 164, name: "Munger" }, { no: 165, name: "Jamalpur" }, { no: 166, name: "Suryagarha" }, { no: 167, name: "Lakhisarai" }, { no: 168, name: "Mokama" }, { no: 169, name: "Barh" }, { no: 170, name: "Asthawan" },
+  { no: 171, name: "Biharsharif" }, { no: 172, name: "Rajgir (SC)" }, { no: 173, name: "Islampur" }, { no: 174, name: "Hilsa" }, { no: 175, name: "Nalanda" }, { no: 176, name: "Harnaut" }, { no: 177, name: "Bakhtiarpur" }, { no: 178, name: "Digha" }, { no: 179, name: "Bankipur" }, { no: 180, name: "Kumhrar" },
+  { no: 181, name: "Patna Sahib" }, { no: 182, name: "Fatuha" }, { no: 183, name: "Danapur" }, { no: 184, name: "Maner" }, { no: 185, name: "Phulwari (SC)" }, { no: 186, name: "Masaurhi (SC)" }, { no: 187, name: "Paliganj" }, { no: 188, name: "Bikram" }, { no: 189, name: "Sandesh" }, { no: 190, name: "Barhara" },
+  { no: 191, name: "Arrah" }, { no: 192, name: "Agiaon (SC)" }, { no: 193, name: "Tarari" }, { no: 194, name: "Jagdishpur" }, { no: 195, name: "Shahpur" }, { no: 196, name: "Brahampur" }, { no: 197, name: "Buxar" }, { no: 198, name: "Dumraon" }, { no: 199, name: "Rajpur (SC)" }, { no: 200, name: "Ramgarh" },
+  { no: 201, name: "Dinara" }, { no: 202, name: "Mohania (SC)" }, { no: 203, name: "Bhabua" }, { no: 204, name: "Chainpur" }, { no: 205, name: "Chenari (SC)" }, { no: 206, name: "Sasaram" }, { no: 207, name: "Kargahar" }, { no: 208, name: "Nokha" }, { no: 209, name: "Dehri" }, { no: 210, name: "Karakat" },
+  { no: 211, name: "Goh" }, { no: 212, name: "Obra" }, { no: 213, name: "Nabinagar" }, { no: 214, name: "Arwal" }, { no: 215, name: "Kurtha" }, { no: 216, name: "Jahanabad" }, { no: 217, name: "Ghosi" }, { no: 218, name: "Makhdumpur (SC)" }, { no: 219, name: "Atri" }, { no: 220, name: "Kutumba (SC)" },
+  { no: 221, name: "Aurangabad" }, { no: 222, name: "Rafiganj" }, { no: 223, name: "Gurua" }, { no: 224, name: "Imamganj (SC)" }, { no: 225, name: "Tikari" }, { no: 226, name: "Sherghati" }, { no: 227, name: "Barachatti (SC)" }, { no: 228, name: "Bodh Gaya (SC)" }, { no: 229, name: "Gaya Town" }, { no: 230, name: "Belaganj" },
+  { no: 231, name: "Wazirganj" }, { no: 232, name: "Barbigha" }, { no: 233, name: "Rajauli (SC)" }, { no: 234, name: "Hisua" }, { no: 235, name: "Nawada" }, { no: 236, name: "Gobindpur" }, { no: 237, name: "Warsaliganj" }, { no: 238, name: "Tarapur" }, { no: 239, name: "Sheikhpura" }, { no: 240, name: "Sikandra (SC)" },
+  { no: 241, name: "Jamui" }, { no: 242, name: "Jhajha" }, { no: 243, name: "Chakai" }
+];
+
+// --- DATA SOURCE: GOA (40) ---
+const GA_DATA = [
+  { no: 1, name: "Mandrem" }, { no: 2, name: "Pernem (SC)" }, { no: 3, name: "Bicholim" }, { no: 4, name: "Tivim" }, { no: 5, name: "Mapusa" }, { no: 6, name: "Siolim" }, { no: 7, name: "Saligao" }, { no: 8, name: "Calangute" }, { no: 9, name: "Porvorim" }, { no: 10, name: "Aldona" },
+  { no: 11, name: "Panaji" }, { no: 12, name: "Taleigao" }, { no: 13, name: "St. Cruz" }, { no: 14, name: "St. Andre" }, { no: 15, name: "Cumbarjua" }, { no: 16, name: "Maem" }, { no: 17, name: "Sanquelim" }, { no: 18, name: "Poriem" }, { no: 19, name: "Valpoi" }, { no: 20, name: "Priol" },
+  { no: 21, name: "Ponda" }, { no: 22, name: "Siroda" }, { no: 23, name: "Marcaim" }, { no: 24, name: "Mormugao" }, { no: 25, name: "Vasco-Da-Gama" }, { no: 26, name: "Dabolim" }, { no: 27, name: "Cortalim" }, { no: 28, name: "Nuvem" }, { no: 29, name: "Curtorim" }, { no: 30, name: "Fatorda" },
+  { no: 31, name: "Margao" }, { no: 32, name: "Benaulim" }, { no: 33, "name": "Navelim" }, { no: 34, name: "Cuncolim" }, { no: 35, name: "Velim" }, { no: 36, name: "Quepem" }, { no: 37, name: "Curchorem" }, { no: 38, name: "Sanvordem" }, { no: 39, name: "Sanguem" }, { no: 40, name: "Canacona" }
+];
+
 export const generateConstituencies = (stateCode: string, totalSeats: number): AssemblyConstituency[] => {
   const mapData = (dataArr: { no: number, name: string }[], label: string) => {
     return dataArr.map(d => ({
@@ -40,7 +156,35 @@ export const generateConstituencies = (stateCode: string, totalSeats: number): A
   };
 
   let realData: { no: number, name: string }[] = [];
-  if (stateCode === 'PB') realData = PB_DATA;
+  switch (stateCode) {
+    case 'PB':
+      realData = PB_DATA;
+      break;
+    case 'HR':
+      realData = HR_DATA;
+      break;
+    case 'UK':
+      realData = UK_DATA;
+      break;
+    case 'TS':
+      realData = TS_DATA;
+      break;
+    case 'AP':
+      realData = AP_DATA;
+      break;
+    case 'AR':
+      realData = AR_DATA;
+      break;
+    case 'AS':
+      realData = AS_DATA;
+      break;
+    case 'BR':
+      realData = BR_DATA;
+      break;
+    case 'GA':
+      realData = GA_DATA;
+      break;
+  }
 
   const baseList = mapData(realData, stateCode);
   const existingNumbers = new Set(baseList.map(ac => ac.number));
@@ -64,16 +208,37 @@ export const generateConstituencies = (stateCode: string, totalSeats: number): A
 };
 
 export const INDIAN_STATES: StateData[] = [
-  { id: 'pb', name: 'Punjab', code: 'PB', totalSeats: 117, acs: [] },
-  { id: 'wb', name: 'West Bengal', code: 'WB', totalSeats: 294, acs: [] },
-  { id: 'dl', name: 'Delhi', code: 'DL', totalSeats: 70, acs: [] },
-  { id: 'up', name: 'Uttar Pradesh', code: 'UP', totalSeats: 403, acs: [] },
-  { id: 'mp', name: 'Madhya Pradesh', code: 'MP', totalSeats: 230, acs: [] },
-  { id: 'br', name: 'Bihar', code: 'BR', totalSeats: 243, acs: [] },
-  { id: 'rj', name: 'Rajasthan', code: 'RJ', totalSeats: 200, acs: [] },
-  { id: 'gj', name: 'Gujarat', code: 'GJ', totalSeats: 182, acs: [] },
-  { id: 'od', name: 'Odisha', code: 'OD', totalSeats: 147, acs: [] },
-  { id: 'ka', name: 'Karnataka', code: 'KA', totalSeats: 224, acs: [] },
+    { id: 'ap', name: 'Andhra Pradesh', code: 'AP', totalSeats: 175, acs: [] },
+    { id: 'ar', name: 'Arunachal Pradesh', code: 'AR', totalSeats: 60, acs: [] },
+    { id: 'as', name: 'Assam', code: 'AS', totalSeats: 126, acs: [] },
+    { id: 'br', name: 'Bihar', code: 'BR', totalSeats: 243, acs: [] },
+    { id: 'cg', name: 'Chhattisgarh', code: 'CG', totalSeats: 90, acs: [] },
+    { id: 'dl', name: 'Delhi', code: 'DL', totalSeats: 70, acs: [] },
+    { id: 'ga', name: 'Goa', code: 'GA', totalSeats: 40, acs: [] },
+    { id: 'gj', name: 'Gujarat', code: 'GJ', totalSeats: 182, acs: [] },
+    { id: 'hr', name: 'Haryana', code: 'HR', totalSeats: 90, acs: [] },
+    { id: 'hp', name: 'Himachal Pradesh', code: 'HP', totalSeats: 68, acs: [] },
+    { id: 'jk', name: 'Jammu and Kashmir', code: 'JK', totalSeats: 90, acs: [] },
+    { id: 'jh', name: 'Jharkhand', code: 'JH', totalSeats: 81, acs: [] },
+    { id: 'ka', name: 'Karnataka', code: 'KA', totalSeats: 224, acs: [] },
+    { id: 'kl', name: 'Kerala', code: 'KL', totalSeats: 140, acs: [] },
+    { id: 'mp', name: 'Madhya Pradesh', code: 'MP', totalSeats: 230, acs: [] },
+    { id: 'mh', name: 'Maharashtra', code: 'MH', totalSeats: 288, acs: [] },
+    { id: 'mn', name: 'Manipur', code: 'MN', totalSeats: 60, acs: [] },
+    { id: 'ml', name: 'Meghalaya', code: 'ML', totalSeats: 60, acs: [] },
+    { id: 'mz', name: 'Mizoram', code: 'MZ', totalSeats: 40, acs: [] },
+    { id: 'nl', name: 'Nagaland', code: 'NL', totalSeats: 60, acs: [] },
+    { id: 'od', name: 'Odisha', code: 'OD', totalSeats: 147, acs: [] },
+    { id: 'py', name: 'Puducherry', code: 'PY', totalSeats: 30, acs: [] },
+    { id: 'pb', name: 'Punjab', code: 'PB', totalSeats: 117, acs: [] },
+    { id: 'rj', name: 'Rajasthan', code: 'RJ', totalSeats: 200, acs: [] },
+    { id: 'sk', name: 'Sikkim', code: 'SK', totalSeats: 32, acs: [] },
+    { id: 'tn', name: 'Tamil Nadu', code: 'TN', totalSeats: 234, acs: [] },
+    { id: 'ts', name: 'Telangana', code: 'TS', totalSeats: 119, acs: [] },
+    { id: 'tr', name: 'Tripura', code: 'TR', totalSeats: 60, acs: [] },
+    { id: 'up', name: 'Uttar Pradesh', code: 'UP', totalSeats: 403, acs: [] },
+    { id: 'uk', name: 'Uttarakhand', code: 'UK', totalSeats: 70, acs: [] },
+    { id: 'wb', name: 'West Bengal', code: 'WB', totalSeats: 294, acs: [] },
 ];
 
 INDIAN_STATES.forEach(s => s.acs = generateConstituencies(s.code, s.totalSeats));
