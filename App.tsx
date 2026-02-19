@@ -1,11 +1,8 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { 
   Search, ChevronRight, Phone, Sparkles, ArrowLeft, X, 
-  FileSpreadsheet, ShieldCheck, Activity, Eye, 
-  MessageSquare, Database, Target, Lock, Zap, HelpCircle, ChevronDown, CheckCircle2, 
-  Download, MapPin, TrendingUp, Users, 
-  FileText, ArrowRight, Printer, BarChart3, 
-  Globe, Info, Table2, Calculator, Settings, Code, FileSearch, Layers
+  FileSpreadsheet, MessageSquare, Database, CheckCircle2, 
+  Download, Users, ArrowRight, Settings, FileSearch, Layers
 } from 'lucide-react';
 import { INDIAN_STATES, CONTACT_WHATSAPP } from './constants';
 import { StateData, ViewState, AssemblyConstituency } from './types';
