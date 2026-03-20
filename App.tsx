@@ -210,7 +210,7 @@ const DataConversionView = ({ onBack }: { onBack: () => void }) => (
               <div className="text-purple-600"><CheckCircle2 className="w-5 h-5" /></div>
               <div>
                 <h4 className="font-bold text-sm text-slate-900 mb-1">Affordable Pricing</h4>
-                <p className="text-xs text-slate-500">Bulk conversion starting at ₹4500 per AC.</p>
+                <p className="text-xs text-slate-500">Bulk conversion starting at ₹15000 per AC.</p>
               </div>
             </div>
           </div>

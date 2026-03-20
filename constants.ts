@@ -1,12 +1,12 @@
-import { StateData, AssemblyConstituency } from './types.ts';
+import { StateData, AssemblyConstituency } from './types';
 
 export const APP_NAME = "VoterListExcel.in";
 export const CONTACT_WHATSAPP = "918949656466"; 
 
 const getProfessionalPrice = (no: number) => {
-  // Base price 4500 + variance (0-500) = Range 4500 to 5000
-  const base = 4500;
-  const variance = (no * 37) % 501; 
+  // Base price 15000 + variance (0-1000) = Range 15000 to 16000
+  const base = 15000;
+  const variance = (no * 37) % 1001; 
   return base + variance;
 };
 
